@@ -2,15 +2,15 @@ name: CI workflow
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     container: python:3.9-slim
-    steps: 
+    steps:
       - name: checkout
         uses: actions/checkout@v3
 
